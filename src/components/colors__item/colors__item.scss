@@ -1,0 +1,53 @@
+
+.colors__item {
+    display:flex;
+    align-items: center;
+    padding-left: 150px;
+    padding-bottom: 20px;
+
+    .dark-100{
+        @include colors-square($dark-shade-100)
+    }
+    .dark-75{
+        @include colors-square($dark-shade-75)
+    }
+    .dark-50{
+        @include colors-square($dark-shade-50)
+    }
+    .dark-25{
+        @include colors-square($dark-shade-25)
+    }
+    .dark-5{
+        @include colors-square($dark-shade-5)
+    }
+    .purple{
+        @include colors-square($purple)
+    }
+    .green{
+        @include colors-square($green)
+    }
+}
+
+.colors__item:first-child {
+    padding-top: 150px;
+}
+
+.colors__item-description {
+    display: flex;
+    flex-direction: column;
+    font-size: 19px;
+    line-height: 29px;
+    // max-width: 200px;
+    padding-left: 40px;
+    
+    
+}
+
+.colors__item-description .color__name {
+    font-family:  'Quicksand-Bold';
+}
+
+.color__hash {
+    font-family:  'Quicksand-Regular';
+}
+
