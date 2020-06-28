@@ -1,0 +1,54 @@
+
+.types__items {
+   display: flex;
+   padding-right: 191px;
+   
+
+   .types__item-title{
+       
+       text-align: right;
+   }
+
+   .types__item-text {
+       padding-bottom: 50px;
+   }
+    
+    .h1-title {
+        @include titles (24px, 29px)
+    }
+
+    .h1-text {
+        @include widget-title
+    }
+
+    .h2-title {
+        @include titles (19px, 23px)
+    }
+
+    .h2-text {
+        @include title-inside-widgets
+    }
+    
+    .h3-title {
+        @include titles (12px, 15px)
+    }
+
+    .h3-text {
+        @include label-text
+    }
+    
+    .h4-title {
+        @include titles (14px, 24px)
+    }
+
+    .h4-text {
+        @include body-text
+    }
+
+    .types__item-text {
+        max-width: 301px;
+    }
+    
+}
+
+

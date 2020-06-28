@@ -5,8 +5,15 @@
 @import "utils/fonts";
 @import "utils/reset";
 
+@import "components/grey__logo/grey__logo.scss";
+@import "components/colors__item/colors__item.scss";
+@import "components/types/types.scss";
 
 
-@import "components/colors__item/colors__item.scss"
 
 
+
+.wrapper__items {
+    display: flex;
+    justify-content: space-between;
+}
