@@ -1,0 +1,43 @@
+.text__field {
+    max-width: 320px;
+}
+
+
+.text__field-input {
+    background: #FFFFFF;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 4px;
+    width: 320px;
+    height: 44px;
+    padding-left: 15px;
+    outline:none;
+}
+
+.text__field-descr {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 5px;;
+}
+
+.text__field-label {
+    @include label-text;
+}
+
+.text__field-status {
+    @include titles (12px, 15px, $dark-shade-50);
+    text-transform: uppercase;
+}
+
+.text__field-input::placeholder {
+    @include titles (14px, 18px, $dark-shade-25);
+    
+}
+
+.text__field-input-hover {
+    border: 1px solid rgba(31, 32, 65, 0.5);
+}
+
+.text__field-input-hover::placeholder {
+    @include titles (14px, 24px, $dark-shade-75);
+}

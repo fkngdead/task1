@@ -30,6 +30,13 @@ module.exports = {
                 collapseWhitespace: isProd
             }
         }),
+        new HTMLWebpackPlugin({
+            filename: 'formelements.html',
+            template: './src/pages/formelemets.pug',
+            minify: {
+                collapseWhitespace: isProd
+            }
+        }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'style.css'

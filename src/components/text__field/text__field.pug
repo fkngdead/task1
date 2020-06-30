@@ -1,0 +1,7 @@
+mixin inputField(textStatus, placeholderText, className)    
+    .text__field
+        form.text__field-form
+            .text__field-descr
+                label.text__field-label Text Field
+                p.text__field-status=textStatus
+            input.text__field-input(class=className , type="text", placeholder=placeholderText)

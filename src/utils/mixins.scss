@@ -22,7 +22,7 @@
   font-family: 'Montserrat-Bold' ;
   font-size: 12px ;
   line-height: 15px ;
-  color: $dark-shade-75;
+  color: $dark-shade-100;
   text-transform: uppercase;
 }
 
@@ -34,9 +34,9 @@
   color: $dark-shade-75;
 }
 
-@mixin titles ($fontS, $lineH) {
+@mixin titles ($fontS, $lineH, $colorT) {
   font-family: 'Montserrat-Regular' ;
   font-size: $fontS;
   line-height: $lineH;
-  color: $dark-shade-25;
+  color: $colorT;
 }
