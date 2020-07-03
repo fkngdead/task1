@@ -1,5 +1,8 @@
 include ../components/text__field/text__field.pug
 include ../components/checkbox/checkbox.pug
+include ../components/button/button.pug
+include ../components/toggle/toggle.pug
+
 
 <!DOCTYPE html>
 html(lang="en")
@@ -7,6 +10,7 @@ html(lang="en")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Document
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons", rel="stylesheet")
     body
         +inputField('Default', 'Email')
         +inputField('Hover / Focus', 'This is pretty awesome', 'text__field-input-hover')
@@ -16,3 +20,19 @@ html(lang="en")
             +checkbox('Можно пригласить гостей (до 10 человек)')
 
         include ../components/radio-buttons/radio-buttons.pug
+
+        +toggle-button
+        +toggle-button
+
+        +button('click me')(class='registration-btn')
+        +button('click me')(class='login-btn')
+        +button('click me')(class='reset-btn')
+        +button('click me')(class='apply-btn')
+        +payButton('перейти к оплате')(class='pay-btn')
+        
+        
+        
+       
+       
+
+        

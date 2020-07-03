@@ -1,0 +1,6 @@
+mixin button(btnText)
+    button(type="button", class!=attributes.class)= btnText
+
+mixin payButton(btnText)
+    button(type="button", class!=attributes.class)= btnText
+        i.pay-btn__arrow.material-icons arrow_forward

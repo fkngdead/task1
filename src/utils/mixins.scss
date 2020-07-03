@@ -4,39 +4,65 @@
   border-radius: 6px;
   background: $color;
 }
+
 @mixin widget-title {
-  font-family: 'Quicksand-Bold' ;
-  font-size: 24px ;
-  line-height: 29px ;
+  font-family: 'Quicksand-Bold';
+  font-size: 24px;
+  line-height: 29px;
   color: $dark-shade-100;
 }
 
 @mixin title-inside-widgets {
-  font-family: 'Quicksand-Bold' ;
-  font-size: 19px ;
-  line-height: 23px ;
+  font-family: 'Quicksand-Bold';
+  font-size: 19px;
+  line-height: 23px;
   color: $dark-shade-100;
 }
 
 @mixin label-text {
-  font-family: 'Montserrat-Bold' ;
-  font-size: 12px ;
-  line-height: 15px ;
+  font-family: 'Montserrat-Bold';
+  font-size: 12px;
+  line-height: 15px;
   color: $dark-shade-100;
   text-transform: uppercase;
 }
 
 
 @mixin body-text {
-  font-family: 'Montserrat-Regular' ;
-  font-size: 19px ;
-  line-height: 24px ;
+  font-family: 'Montserrat-Regular';
+  font-size: 19px;
+  line-height: 24px;
   color: $dark-shade-75;
 }
 
 @mixin titles ($fontS, $lineH, $colorT) {
-  font-family: 'Montserrat-Regular' ;
+  font-family: 'Montserrat-Regular';
   font-size: $fontS;
   line-height: $lineH;
   color: $colorT;
+}
+
+@mixin login-buttons {
+  font-family: 'Montserrat-Bold';
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin active-buttons($textColor) {
+  background: #fff;
+  height: 15px;
+  font-family: 'Montserrat-Bold';
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  color: $textColor;
+  cursor: pointer;
 }

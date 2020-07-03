@@ -1,8 +1,10 @@
-const path = require('path')
-const HTMLWebpackPlugin = require('html-webpack-plugin')
-const {CleanWebpackPlugin} = require('clean-webpack-plugin')
+const path = require('path');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+
+
 
 
 const isDev = process.env.NODE_ENV === 'development'
@@ -11,12 +13,12 @@ const isProd = !isDev
 
 module.exports = {
     mode: 'development',
-    entry:{
+    entry: {
         main: './src/index.js',
-    } ,
+    },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'dist') 
+        path: path.resolve(__dirname, 'dist')
     },
     devServer: {
         port: 4200,
@@ -44,11 +46,9 @@ module.exports = {
 
     ],
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.css$/,
-                use: [
-                    {
+                use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
                             hmr: isDev,
@@ -57,10 +57,9 @@ module.exports = {
                     },
                     'css-loader',
                 ],
-            },{
+            }, {
                 test: /\.s[ac]ss$/,
-                use: [
-                    {
+                use: [{
                         loader: MiniCssExtractPlugin.loader,
                         options: {
                             hmr: isDev,
@@ -70,17 +69,17 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ],
-            },{
+            }, {
                 test: /\.(png|jpg|svg|gif)$/,
                 use: ['file-loader']
-            },{
+            }, {
                 test: /\.(ttf|woff|woff2|eot|svg)$/,
                 use: ['file-loader']
-            },{
+            }, {
                 test: /\.pug$/,
                 use: ['pug-loader']
             }
-            
+
         ]
     }
 }

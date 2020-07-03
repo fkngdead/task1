@@ -317,6 +317,131 @@ table {
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75); }
 
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer; }
+  input[type="checkbox"]:focus {
+    outline: 0; }
+
+.toggle {
+  display: flex;
+  align-items: center; }
+
+.toggle-input {
+  height: 20px;
+  width: 40px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  border: 2px solid rgba(31, 32, 65, 0.25);
+  background: #fff;
+  transition: all 0.2s ease; }
+  .toggle-input:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(31, 32, 65, 0.25);
+    box-shadow: 0 1px 2px rgba(44, 44, 44, 0.2);
+    transition: all 0.2s cubic-bezier(0.5, 0.1, 0.75, 1.35); }
+  .toggle-input:checked {
+    border-color: #BC9CFF; }
+    .toggle-input:checked:after {
+      transform: translatex(20px);
+      background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%); }
+
+.toggle-descr {
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 10px; }
+
+.registration-btn {
+  font-family: 'Montserrat-Bold';
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #fff;
+  border: none; }
+  .registration-btn:focus, .registration-btn:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+
+.login-btn {
+  font-family: 'Montserrat-Bold';
+  width: 99px;
+  height: 44px;
+  border-radius: 22px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid #BC9CFF;
+  color: #BC9CFF; }
+  .login-btn:focus, .login-btn:hover {
+    border: 2px solid rgba(188, 156, 255, 0.5); }
+
+.reset-btn {
+  background: #fff;
+  height: 15px;
+  font-family: 'Montserrat-Bold';
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer; }
+
+.apply-btn {
+  background: #fff;
+  height: 15px;
+  font-family: 'Montserrat-Bold';
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  color: #BC9CFF;
+  cursor: pointer; }
+
+.pay-btn {
+  position: relative;
+  width: 320px;
+  height: 44px;
+  border-radius: 22px;
+  font-family: 'Montserrat-Bold';
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  color: #fff;
+  border: none;
+  position: relative; }
+  .pay-btn:focus, .pay-btn:hover {
+    background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%); }
+  .pay-btn .pay-btn__arrow.material-icons {
+    position: absolute;
+    top: 10px;
+    right: 0; }
+
 .wrapper__items {
   display: flex;
   justify-content: space-between; }
