@@ -1,0 +1,22 @@
+.bullet-list {
+    list-style: none;   
+
+    .bullet-list__item {
+        display: flex;
+        align-items: center;
+        padding-bottom: 10px;
+        @include titles(14px, 24px, $dark-shade-75)
+        
+        &::before { 
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $dark-shade-25;
+            margin-right: 10px;
+        }
+    }
+
+    
+}

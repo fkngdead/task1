@@ -1,3 +1,4 @@
 mixin toggle-button(isChecked)
-    input(type="checkbox", class="toggle-input")
-    p.toggle-descr Получать спецпредложения
+    .toggle
+        input(type="checkbox", class="toggle-input" checked=isChecked)
+        p.toggle-descr Получать спецпредложения

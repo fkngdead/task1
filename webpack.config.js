@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
@@ -24,27 +25,7 @@ module.exports = {
         port: 4200,
         hot: isDev
     },
-    plugins: [
-        new HTMLWebpackPlugin({
-            filename: 'colors.html',
-            template: './src/pages/colors.pug',
-            minify: {
-                collapseWhitespace: isProd
-            }
-        }),
-        new HTMLWebpackPlugin({
-            filename: 'formelements.html',
-            template: './src/pages/formelemets.pug',
-            minify: {
-                collapseWhitespace: isProd
-            }
-        }),
-        new CleanWebpackPlugin(),
-        new MiniCssExtractPlugin({
-            filename: 'style.css'
-        }),
 
-    ],
     module: {
         rules: [{
                 test: /\.css$/,
@@ -81,5 +62,39 @@ module.exports = {
             }
 
         ]
-    }
+    },
+    plugins: [
+        new HTMLWebpackPlugin({
+            filename: 'colors.html',
+            template: './src/pages/colors.pug',
+            minify: {
+                collapseWhitespace: isProd
+            }
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'formelements.html',
+            template: './src/pages/formelemets.pug',
+            minify: {
+                collapseWhitespace: isProd
+            }
+        }),
+        new HTMLWebpackPlugin({
+            filename: 'cards.html',
+            template: './src/pages/cards.pug',
+            minify: {
+                collapseWhitespace: isProd
+            }
+        }),
+        new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+            filename: 'style.css'
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.$': 'jquery',
+        })
+        
+
+    ],
 }

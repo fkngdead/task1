@@ -32,3 +32,20 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'OpenSans-Bold';
+	src: url('../src/assets/fonts/OpenSans-Bold/open-sans-v17-latin_cyrillic-700.eot');
+	src: local('☺'), url('../src/assets/fonts/OpenSans-Bold/open-sans-v17-latin_cyrillic-700.woff') format('woff'), url('../src/assets/fonts/OpenSans-Bold/open-sans-v17-latin_cyrillic-700.ttf') format('truetype'), url('../src/assets/fonts/OpenSans-Bold/open-sans-v17-latin_cyrillic-700.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url('../src/assets/fonts/OpenSans-Regular/open-sans-v17-latin_cyrillic-regular.eot');
+	src: local('☺'), url('../src/assets/fonts/OpenSans-Regular/open-sans-v17-latin_cyrillic-regular.woff') format('woff'), url('../src/assets/fonts/OpenSans-Regular/open-sans-v17-latin_cyrillic-regular.ttf') format('truetype'), url('../src/assets/fonts/OpenSans-Regular/open-sans-v17-latin_cyrillic-regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+

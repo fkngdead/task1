@@ -2,6 +2,8 @@ include ../components/text__field/text__field.pug
 include ../components/checkbox/checkbox.pug
 include ../components/button/button.pug
 include ../components/toggle/toggle.pug
+include ../components/info/info.pug
+include ../components/bullet-list/bullet-list.pug
 
 
 <!DOCTYPE html>
@@ -16,12 +18,12 @@ html(lang="en")
         +inputField('Hover / Focus', 'This is pretty awesome', 'text__field-input-hover')
         .checkbox
             +checkbox('Можно курить')
-            +checkbox('Можно с питомцами')
-            +checkbox('Можно пригласить гостей (до 10 человек)')
+            +checkbox('Можно с питомцами', 'true')
+            +checkbox('Можно пригласить гостей (до 10 человек)', 'true')
 
         include ../components/radio-buttons/radio-buttons.pug
 
-        +toggle-button
+        +toggle-button('true')
         +toggle-button
 
         +button('click me')(class='registration-btn')
@@ -29,7 +31,12 @@ html(lang="en")
         +button('click me')(class='reset-btn')
         +button('click me')(class='apply-btn')
         +payButton('перейти к оплате')(class='pay-btn')
+
+        +info('insert_emoticon', 'Комфорт', 'Шумопоглощающие стены')
+
         
+
+        +bullet-list
         
         
        
