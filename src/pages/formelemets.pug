@@ -4,6 +4,9 @@ include ../components/button/button.pug
 include ../components/toggle/toggle.pug
 include ../components/info/info.pug
 include ../components/bullet-list/bullet-list.pug
+include ../components/datepicker/datepicker
+include ../components/dropdown/dropdown
+include ../components/masked-textfield/masked-textfield
 
 
 <!DOCTYPE html>
@@ -37,6 +40,12 @@ html(lang="en")
         
 
         +bullet-list
+
+        include ../components/rangeslider/rangeslider
+        +datepicker
+
+        +dropdown
+        +masked-textfield
         
         
        

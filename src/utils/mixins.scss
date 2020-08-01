@@ -6,14 +6,14 @@
 }
 
 @mixin widget-title {
-  font-family: 'Quicksand-Bold';
+  font-family: 'OpenSans-Bold';
   font-size: 24px;
   line-height: 29px;
   color: $dark-shade-100;
 }
 
 @mixin title-inside-widgets {
-  font-family: 'Quicksand-Bold';
+  font-family: 'OpenSans-Bold';
   font-size: 19px;
   line-height: 23px;
   color: $dark-shade-100;

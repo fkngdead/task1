@@ -52,7 +52,7 @@ module.exports = {
                 ],
             }, {
                 test: /\.(png|jpg|svg|gif)$/,
-                use: ['file-loader']
+                use: ['file-loader'],
             }, {
                 test: /\.(ttf|woff|woff2|eot|svg)$/,
                 use: ['file-loader']
@@ -74,13 +74,6 @@ module.exports = {
         new HTMLWebpackPlugin({
             filename: 'formelements.html',
             template: './src/pages/formelemets.pug',
-            minify: {
-                collapseWhitespace: isProd
-            }
-        }),
-        new HTMLWebpackPlugin({
-            filename: 'cards.html',
-            template: './src/pages/cards.pug',
             minify: {
                 collapseWhitespace: isProd
             }
