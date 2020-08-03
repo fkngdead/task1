@@ -1397,11 +1397,29 @@ body {
 
 .iqdropdown.menu-open .iqdropdown-selection::after {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAe1BMVEVMaXH///+ZmZmqqqqVlZWdnZ2Xl5eVlZWVlZWUlJSQkJCUlJSTk5ORkZGRkZGRkZGSkpKRkZGSkpKSkpKRkZGQkJCRkZGRkZGRkZGQkJCSkpKRkZGRkZGRkZGRkZGRkZGRkZGRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJAwdLQhAAAAKHRSTlMAAQUGDA0bHSQmNTdHSEpYWV1gbnKIi5SZqqqytcfJzNfZ5uf19fn+jEECQQAAAIhJREFUeNqNj+cSwkAIhLn0Znoz7dLD+z9hII6OJTruH5b9mDuAv2VKaX5BSjojLqlyxi49Huq9D2TVlG/VdaNSWy9Iy1YKOxfA7cismfZAIhopmWJxNPFEzRiJG3NaHs71+6ye8zOtwz7kbxobnmQ3vEBArkAcfHiTPyAWVI0yOTlNTUoDfmoHOBIMkOONx34AAAAASUVORK5CYII=); }
-.sub-input {
-  width: 267px;
-  height: 44px; }
-  .sub-input::after {
-    content: 'arrow_forward'; }
+.subscr {
+  position: relative; }
+  .subscr .sub-input {
+    width: 267px;
+    height: 44px;
+    border: 1px solid rgba(31, 32, 65, 0.25); }
+    .subscr .sub-input::placeholder {
+      font-family: 'Montserrat-Regular';
+      font-size: 14px;
+      line-height: 24px;
+      color: rgba(31, 32, 65, 0.25);
+      padding-left: 15px; }
+  .subscr .subscr-input__arrow {
+    position: absolute;
+    font-style: 24px;
+    line-height: 24px;
+    left: 233px;
+    top: 10px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: initial; }
 
 .pagination {
   display: flex;

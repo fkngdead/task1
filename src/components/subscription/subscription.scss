@@ -1,8 +1,28 @@
-.sub-input {
-    width: 267px;
-    height: 44px;
+.subscr {
 
-    &::after {
-        content: 'arrow_forward';
+    position: relative;
+
+    .sub-input {
+        width: 267px;
+        height: 44px;
+        border: 1px solid $dark-shade-25;
+
+        &::placeholder {
+            @include titles(14px, 24px, $dark-shade-25);
+            padding-left: 15px;
+        }
+    }
+
+    .subscr-input__arrow {
+        position: absolute;
+        font-style: 24px;
+        line-height: 24px;
+        left: 233px;
+        top: 10px;
+        background: $primary-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: initial;
     }
 }
