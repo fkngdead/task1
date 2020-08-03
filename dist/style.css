@@ -1397,6 +1397,64 @@ body {
 
 .iqdropdown.menu-open .iqdropdown-selection::after {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAMCAMAAABGBS09AAAAe1BMVEVMaXH///+ZmZmqqqqVlZWdnZ2Xl5eVlZWVlZWUlJSQkJCUlJSTk5ORkZGRkZGRkZGSkpKRkZGSkpKSkpKRkZGQkJCRkZGRkZGRkZGQkJCSkpKRkZGRkZGRkZGRkZGRkZGRkZGRkZGQkJCRkZGQkJCRkZGQkJCRkZGQkJAwdLQhAAAAKHRSTlMAAQUGDA0bHSQmNTdHSEpYWV1gbnKIi5SZqqqytcfJzNfZ5uf19fn+jEECQQAAAIhJREFUeNqNj+cSwkAIhLn0Znoz7dLD+z9hII6OJTruH5b9mDuAv2VKaX5BSjojLqlyxi49Huq9D2TVlG/VdaNSWy9Iy1YKOxfA7cismfZAIhopmWJxNPFEzRiJG3NaHs71+6ye8zOtwz7kbxobnmQ3vEBArkAcfHiTPyAWVI0yOTlNTUoDfmoHOBIMkOONx34AAAAASUVORK5CYII=); }
+.sub-input {
+  width: 267px;
+  height: 44px; }
+  .sub-input::after {
+    content: 'arrow_forward'; }
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 241px;
+  text-align: center;
+  padding-bottom: 11px; }
+  .pagination .pagination-item {
+    text-decoration: none;
+    font-family: 'Montserrat-Regular';
+    font-size: 12px;
+    line-height: 15px;
+    color: rgba(31, 32, 65, 0.5);
+    width: 40px; }
+  .pagination .next-btn {
+    border-radius: 22px;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+    position: relative; }
+    .pagination .next-btn__arrow {
+      position: absolute;
+      color: #ffffff;
+      font-style: 24px;
+      line-height: 20px;
+      top: 10px;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+  .pagination .current-page {
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    width: 40px;
+    height: 40px;
+    position: relative; }
+    .pagination .current-page__number {
+      position: absolute;
+      color: #ffffff;
+      font-family: 'Montserrat-Bold';
+      top: 10px;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+
+.pagination-descr {
+  font-family: 'Montserrat-Regular';
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 229px;
+  padding: 0 5px; }
+
 .wrapper__items {
   display: flex;
   justify-content: space-between; }

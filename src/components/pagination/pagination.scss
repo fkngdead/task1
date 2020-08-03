@@ -1,0 +1,65 @@
+.pagination {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 241px;
+    text-align: center;
+    padding-bottom: 11px;
+
+    .pagination-item {
+        text-decoration: none;
+        @include titles(12px, 15px, $dark-shade-50);
+        width: 40px;
+        
+    }
+
+    .next-btn {
+        border-radius: 22px;
+        width: 40px;
+        height: 40px;
+        background: $secondary-gradient;
+        position: relative;
+        
+        &__arrow {
+            position: absolute;
+            color: #ffffff;
+            font-style: 24px;
+            line-height: 20px;
+            top: 10px; 
+            left: 0; 
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .current-page {
+        
+        background: $primary-gradient;
+        border-radius: 22px;
+        width: 40px;
+        height: 40px;
+        
+        position: relative;
+
+        &__number {
+            position: absolute;
+            color: #ffffff;
+            font-family: 'Montserrat-Bold';
+            top: 10px; 
+            left: 0; 
+            bottom: 0;
+            right: 0;
+        }
+   
+    }
+
+   
+}
+
+.pagination-descr {
+    @include titles(14px, 24px, $dark-shade-75);
+    width: 229px;
+    padding: 0 5px;
+    
+}
